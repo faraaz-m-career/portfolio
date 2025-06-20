@@ -10,26 +10,6 @@
   <meta name="referrer" content="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Faraaz Mohammed",
-    "jobTitle":"Cybersecurity Analyst",
-    "url":"https://faraaz-m-career.github.io/portfolio/",
-    "sameAs":[
-      "https://www.linkedin.com/in/your-profile",
-      "https://github.com/yourhandle"
-    ],
-    "description":"Cybersecurity professional focused on threat detection, vulnerability management, and digital defense.",
-    "knowsAbout":[
-      "Network Security",
-      "Incident Response",
-      "Ethical Hacking",
-      "SIEM Tools"
-    ]
-  }
-  </script>
   <style>
     body {
       font-family: 'Fira Code', monospace;
@@ -185,14 +165,13 @@ Version: OpenPGP
 
   <footer>
     &copy; 2025 Faraaz Mohammed. All rights reserved. <br>
-    Last verified commit: <code>Updated on 2025-06-20 at 22:52:05</code>
+    Last verified commit: <code>Updated</code>
   </footer>
 
   <!-- Firebase Visitor Tracker -->
-  <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js';
-    import { getDatabase, ref, get, set } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js';
-
+  <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-database-compat.js"></script>
+  <script>
     const firebaseConfig = {
       apiKey: "AIzaSyBBxytXsRJskKcs-VngOXaOlAdfQmt1UAw",
       authDomain: "faraaz-m-career-c4413.firebaseapp.com",
@@ -204,14 +183,14 @@ Version: OpenPGP
       measurementId: "G-TKE5LR17XM"
     };
 
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
-    const countRef = ref(db, 'visits/count');
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const countRef = db.ref('visits/count');
 
-    get(countRef).then(snapshot => {
+    countRef.once('value').then(snapshot => {
       const count = snapshot.exists() ? snapshot.val() : 0;
       document.getElementById('visitor-count').innerText = `Visitor count: ${count + 1}`;
-      set(countRef, count + 1);
+      countRef.set(count + 1);
     });
   </script>
 
