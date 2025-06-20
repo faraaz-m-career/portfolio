@@ -10,83 +10,21 @@
   <meta name="referrer" content="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Faraaz Mohammed",
-    "jobTitle":"Cybersecurity Analyst",
-    "url":"https://faraaz-m-career.github.io/portfolio/",
-    "sameAs":[
-      "https://www.linkedin.com/in/your-profile",
-      "https://github.com/yourhandle"
-    ],
-    "description":"Cybersecurity professional focused on threat detection, vulnerability management, and digital defense.",
-    "knowsAbout":[
-      "Network Security",
-      "Incident Response",
-      "Ethical Hacking",
-      "SIEM Tools"
-    ]
-  }
-  </script>
   <style>
-    body {
-      font-family: 'Fira Code', monospace;
-      background-color: #0d1117;
-      color: #c9d1d9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #161b22;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .terminal-box {
-      background: #161b22;
-      padding: 1rem;
-      border-left: 4px solid #58a6ff;
-      margin-bottom: 2rem;
-    }
-    .social-links a {
-      margin: 0 10px;
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    input, textarea {
-      width: 100%;
-      background: #0d1117;
-      color: #c9d1d9;
-      border: 1px solid #30363d;
-      padding: 0.75rem;
-      border-radius: 5px;
-    }
-    button {
-      background: #238636;
-      color: white;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-      border-top: 1px solid #30363d;
-    }
+    body { font-family: 'Fira Code', monospace; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 0; }
+    header { background: #161b22; padding: 2rem 1rem; text-align: center; border-bottom: 1px solid #30363d; }
+    header h1 { color: #58a6ff; margin-bottom: 0.5rem; font-size: 2rem; }
+    .container { padding: 2rem; max-width: 900px; margin: auto; }
+    .terminal-box { background: #161b22; padding: 1rem; border-left: 4px solid #58a6ff; margin-bottom: 2rem; }
+    h2 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 0.3rem; }
+    a { color: #58a6ff; text-decoration: none; }
+    .social-links a { margin: 0 10px; }
+    input, textarea { width: 100%; background: #0d1117; color: #c9d1d9; border: 1px solid #30363d; padding: 0.75rem; border-radius: 5px; margin-top: 0.5rem; }
+    button { background: #238636; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; margin-top: 1rem; cursor: pointer; font-weight: bold; }
+    footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #8b949e; border-top: 1px solid #30363d; }
+    pre { background: #0d1117; padding: 1rem; border: 1px solid #30363d; overflow-x: auto; }
+    ul { list-style: none; padding: 0; }
+    li::before { content: "▸ "; color: #58a6ff; }
   </style>
 </head>
 <body>
@@ -138,16 +76,16 @@ Version: OpenPGP
     <section>
       <h2>Resume</h2>
       <p>You can download my latest resume securely:</p>
-      <a href="resume.pdf" target="_blank" style="color: #58a6ff;">📄 View/Download Resume</a>
+      <a href="resume.pdf" target="_blank">📄 View/Download Resume</a>
     </section>
 
     <section>
       <h2>Core Skills & Tools</h2>
-      <ul style="list-style: none; padding:0;">
-        <li>🔒 Kali Linux · Wireshark · Metasploit</li>
-        <li>📊 Splunk · ELK Stack</li>
-        <li>🛠️ Python · Bash · PowerShell</li>
-        <li>💻 OWASP · NIST · CIS Hardening</li>
+      <ul>
+        <li>Kali Linux · Wireshark · Metasploit</li>
+        <li>Splunk · ELK Stack</li>
+        <li>Python · Bash · PowerShell</li>
+        <li>OWASP · NIST · CIS Hardening</li>
       </ul>
     </section>
 
@@ -160,10 +98,9 @@ Version: OpenPGP
 
   <footer>
     &copy; 2025 Faraaz Mohammed. All rights reserved. <br>
-    Last verified commit: <code>v1.0.0</code>
+    Last verified commit: <code>Updated on 2025-06-20 at 22:52:05</code>
   </footer>
 
-  <!-- Firebase Visitor Tracker -->
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js';
     import { getDatabase, ref, get, set } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js';
@@ -190,7 +127,6 @@ Version: OpenPGP
     });
   </script>
 
-  <!-- IP Intelligence -->
   <script>
     fetch('https://ipapi.co/json/')
       .then(res => res.json())
