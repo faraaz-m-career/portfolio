@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faraaz Mohammed | Cybersecurity Portfolio</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://ipapi.co; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src https://*.firebaseio.com https://ipapi.co;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Faraaz Mohammed",
+    "jobTitle":"Cybersecurity Analyst",
+    "url":"https://faraaz-m-career.github.io/portfolio/",
+    "sameAs":[
+      "https://www.linkedin.com/in/your-profile",
+      "https://github.com/yourhandle"
+    ],
+    "description":"Cybersecurity professional focused on threat detection, vulnerability management, and digital defense.",
+    "knowsAbout":[
+      "Network Security",
+      "Incident Response",
+      "Ethical Hacking",
+      "SIEM Tools"
+    ]
+  }
+  </script>
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #161b22;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .terminal-box {
+      background: #161b22;
+      padding: 1rem;
+      border-left: 4px solid #58a6ff;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    .social-links a {
+      margin: 0 10px;
+    }
+    input, textarea {
+      width: 100%;
+      background: #0d1117;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      padding: 0.75rem;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+    button {
+      background: #238636;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+    pre {
+      background: #0d1117;
+      padding: 1rem;
+      border: 1px solid #30363d;
+      overflow-x: auto;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "▸ ";
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&gt;_ Faraaz Mohammed</h1>
+    <p>Cybersecurity Analyst | Defender of Digital Systems</p>
+  </header>
+
+  <div class="container">
+    <div class="terminal-box">
+      <p><strong>Status:</strong> Public Portfolio Interface</p>
+      <p><strong>Mission:</strong> Secure by Design. Hardened by Default.</p>
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a cybersecurity professional with a strong focus on threat detection, vulnerability management, and digital defense. I build, test, and defend secure systems.</p>
+    </section>
+
+    <section>
+      <h2>PGP Public Key</h2>
+      <p>For secure contact, use my GPG public key:</p>
+      <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP
+
+[YOUR_PUBLIC_PGP_KEY_HERE]
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+    </section>
+
+    <section>
+      <h2>Connect with Me</h2>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourhandle" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xwkjnlpo" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send Secure Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Resume</h2>
+      <p>You can download my latest resume securely:</p>
+      <a href="resume.pdf" target="_blank">📄 View/Download Resume</a>
+    </section>
+
+    <section>
+      <h2>Core Skills & Tools</h2>
+      <ul>
+        <li>Kali Linux · Wireshark · Metasploit</li>
+        <li>Splunk · ELK Stack</li>
+        <li>Python · Bash · PowerShell</li>
+        <li>OWASP · NIST · CIS Hardening</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Visitor Intelligence</h2>
+      <p id="visitor-count">Loading visitor count...</p>
+      <p id="visitor-info">Collecting threat intel...</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Faraaz Mohammed. All rights reserved. <br>
+    Last verified commit: <code>Updated on 2025-06-20 at 22:52:05</code>
+  </footer>
+
+  <!-- Firebase Visitor Tracker -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js';
+    import { getDatabase, ref, get, set } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBBxytXsRJskKcs-VngOXaOlAdfQmt1UAw",
+      authDomain: "faraaz-m-career-c4413.firebaseapp.com",
+      databaseURL: "https://faraaz-m-career-c4413-default-rtdb.firebaseio.com",
+      projectId: "faraaz-m-career-c4413",
+      storageBucket: "faraaz-m-career-c4413.firebasestorage.app",
+      messagingSenderId: "17075393672",
+      appId: "1:17075393672:web:370d405b135a5a5b857b3d",
+      measurementId: "G-TKE5LR17XM"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const countRef = ref(db, 'visits/count');
+
+    get(countRef).then(snapshot => {
+      const count = snapshot.exists() ? snapshot.val() : 0;
+      document.getElementById('visitor-count').innerText = `Visitor count: ${count + 1}`;
+      set(countRef, count + 1);
+    });
+  </script>
+
+  <!-- IP Intelligence -->
+  <script>
+    fetch('https://ipapi.co/json/')
+      .then(res => res.json())
+      .then(data => {
+        const info = `Access from: ${data.ip}, ${data.city}, ${data.country_name} (${data.org})`;
+        document.getElementById('visitor-info').innerText = info;
+      })
+      .catch(() => {
+        document.getElementById('visitor-info').innerText = 'Intel unavailable (privacy respected).';
+      });
+  </script>
+</body>
+</html>
