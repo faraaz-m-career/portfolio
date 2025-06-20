@@ -1,0 +1,5 @@
+Contact: mailto:faraaz.m.career@gmail.com
+Encryption: https://github.com/faraaz-m-career/portfolio/blob/main/pgp_public_key.asc
+Acknowledgement: https://github.com/faraaz-m-career/portfolio/blob/main/ACKNOWLEDGEMENTS.md
+Preferred-Languages: en
+Policy: https://github.com/faraaz-m-career/portfolio/blob/main/security-policy.md
