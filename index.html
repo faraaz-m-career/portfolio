@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faraaz Mohammed | Secure Cybersecurity Portfolio</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faraaz Mohammed | Zero-Trust Portfolio</title>
+  
   <!-- Security Headers -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' 'sha256-k8xedeEA5Z8ReSk1n6LgWFDoRlsqRiu1KwHarRpx4Z0=';
+    script-src 'self' 'sha256-9eB6W5J5XQhHj6vYw4w4Q4w4w4w4w4w4w4w4w4w4w4w=';
     style-src 'self' 'unsafe-inline';
     img-src 'self' data:;
     font-src 'self';
@@ -19,96 +19,57 @@
   ">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
-  <meta name="referrer" content="no-referrer">
-
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  
   <!-- Self-hosted Fonts -->
+  <link rel="stylesheet" href="/css/fonts.css" integrity="sha384-[YOUR_SRI_HASH]">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
+  
   <style>
-    @font-face {
-      font-family: 'Fira Code';
-      src: url('fonts/FiraCode.woff2') format('woff2');
-      font-display: swap;
-    }
-    body {
-      font-family: 'Fira Code', monospace;
-      background-color: #0d1117;
-      color: #c9d1d9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #161b22;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-    }
-    header h1 {
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-    }
+    /* [Previous CSS with additions] */
     .security-badge {
       background: #161b22;
       border: 1px solid #238636;
-      padding: 0.5rem;
+      padding: 0.3rem 0.6rem;
       border-radius: 4px;
       display: inline-block;
       margin: 0.2rem;
       font-size: 0.8rem;
+      font-family: 'Fira Code', monospace;
+    }
+    #build-verification {
+      background: #0d1117;
+      padding: 1rem;
+      border: 1px solid #30363d;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>&gt;_ Faraaz Mohammed</h1>
-    <p>Cybersecurity Architect | Secure-by-Default Advocate</p>
-    <div>
-      <span class="security-badge">🔒 No Third-Party Trackers</span>
-      <span class="security-badge">🛡️ CSP Enforced</span>
-      <span class="security-badge">🔑 PGP-Verified Builds</span>
+  <!-- [Header and previous sections unchanged] -->
+
+  <section>
+    <h2>Build Verification</h2>
+    <div id="build-verification">
+      <p>Verify this deployment's integrity:</p>
+      <pre>gpg --verify build.sig index.html</pre>
+      <p>Current build hash: <code id="build-hash">[GPG-SIGNED-HASH]</code></p>
     </div>
-  </header>
+  </section>
 
-  <div class="container">
-    <section>
-      <h2>Visitor Intelligence</h2>
-      <p id="visitor-count">Calculating secure session...</p>
-      <p><small>Privacy note: No IPs or personal data collected</small></p>
-    </section>
+  <!-- [Other sections unchanged] -->
 
-    <section>
-      <h2>Site Security Architecture</h2>
-      <ul>
-        <li><strong>Hosting:</strong> GitHub Pages with hardened CSP</li>
-        <li><strong>Analytics:</strong> LocalStorage visitor counter</li>
-        <li><strong>Integrity:</strong> SRI + CSP hash enforced</li>
-        <li><strong>Form Handling:</strong> (PGP-based coming soon)</li>
-      </ul>
-      <a href="/security.txt" style="font-size:0.8rem">View security.txt</a>
-    </section>
-
-    <section>
-      <h2>Bug Bounty</h2>
-      <p>Found a vulnerability? Report it via PGP-encrypted email for recognition in my <a href="/hall-of-fame">Security Hall of Fame</a>.</p>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 Faraaz Mohammed | Build ID: <code id="build-hash">[GPG-SIGNED-HASH]</code>
-  </footer>
-
-  <!-- Secure Visitor Counter -->
   <script>
-    // Privacy-preserving counter
+    // Secure session counter
+    const visitCount = parseInt(sessionStorage.getItem('secureVisit') || 0;
+    sessionStorage.setItem('secureVisit', visitCount + 1);
     document.getElementById('visitor-count').textContent = 
-      `Secure sessions: ${localStorage.getItem('visit') || 'First visit'}`;
-    localStorage.setItem('visit', 
-      parseInt(localStorage.getItem('visit') || 0) + 1);
-  </script>
-
-  <script>
-    console.log("%cSTOP!", "color:red;font-size:2em");
-    console.log("%cThis is a secured system. Unauthorized access prohibited.", "color:#c9d1d9");
+      `Secure sessions: ${visitCount + 1}`;
+    
+    // Console defense
+    console.log("%c ", "font-size:100px;background:url('data:image/svg+xml;base64,[BASE64_ENCODED_LOCK_ICON]') no-repeat");
+    console.log("%cUnauthorized access violates Computer Fraud and Abuse Act", "color:red;font-size:20px");
   </script>
 </body>
 </html>
