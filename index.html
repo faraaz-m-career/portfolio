@@ -3,73 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faraaz Mohammed | Zero-Trust Portfolio</title>
-  
-  <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'none';
-    script-src 'self' 'sha256-9eB6W5J5XQhHj6vYw4w4Q4w4w4w4w4w4w4w4w4w4w4w=';
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data:;
-    font-src 'self';
-    connect-src 'self';
-    form-action 'self' https://protonmail.com;
-    base-uri 'self';
-    frame-ancestors 'none';
-  ">
+  <title>Faraaz Mohammed | Secure Cybersecurity Portfolio</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://ipapi.co; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://ipapi.co;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-  
-  <!-- Self-hosted Fonts -->
-  <link rel="stylesheet" href="/css/fonts.css" integrity="sha384-[YOUR_SRI_HASH]">
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
-  
+  <meta name="referrer" content="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='10%' font-size='90'>_</text></svg>">
   <style>
-    /* [Previous CSS with additions] */
-    .security-badge {
-      background: #161b22;
-      border: 1px solid #238636;
-      padding: 0.3rem 0.6rem;
-      border-radius: 4px;
-      display: inline-block;
-      margin: 0.2rem;
-      font-size: 0.8rem;
+    body {
       font-family: 'Fira Code', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
     }
-    #build-verification {
+    header {
+      background: #161b22;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .terminal-box {
+      background: #161b22;
+      padding: 1rem;
+      border-left: 4px solid #58a6ff;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    input, textarea {
+      width: 100%;
+      background: #0d1117;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      padding: 0.75rem;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+    button {
+      background: #238636;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+    pre {
       background: #0d1117;
       padding: 1rem;
       border: 1px solid #30363d;
-      font-size: 0.9rem;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <!-- [Header and previous sections unchanged] -->
+  <header>
+    <h1>&gt;_ Faraaz Mohammed</h1>
+    <p>Cybersecurity Architect | Secure-by-Default Advocate</p>
+  </header>
 
-  <section>
-    <h2>Build Verification</h2>
-    <div id="build-verification">
-      <p>Verify this deployment's integrity:</p>
-      <pre>gpg --verify build.sig index.html</pre>
-      <p>Current build hash: <code id="build-hash">[GPG-SIGNED-HASH]</code></p>
+  <div class="container">
+    <div class="terminal-box">
+      <p><strong>Status:</strong> Public Portfolio Interface</p>
+      <p><strong>Mission:</strong> Secure by Design. Hardened by Default.</p>
     </div>
-  </section>
 
-  <!-- [Other sections unchanged] -->
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a cybersecurity professional focused on threat detection, vulnerability management, and digital defense. I build, test, and defend secure systems.</p>
+    </section>
 
-  <script>
-    // Secure session counter
-    const visitCount = parseInt(sessionStorage.getItem('secureVisit') || 0;
-    sessionStorage.setItem('secureVisit', visitCount + 1);
-    document.getElementById('visitor-count').textContent = 
-      `Secure sessions: ${visitCount + 1}`;
-    
-    // Console defense
-    console.log("%c ", "font-size:100px;background:url('data:image/svg+xml;base64,[BASE64_ENCODED_LOCK_ICON]') no-repeat");
-    console.log("%cUnauthorized access violates Computer Fraud and Abuse Act", "color:red;font-size:20px");
-  </script>
+    <section>
+      <h2>PGP Public Key</h2>
+      <p>Use this to send encrypted messages securely:</p>
+      <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEaFYEkxYJKwYBBAHaRw8BAQdAex0z9ulCnDh/KgKdGUriLLO7mb4fuQDDqFlq
+w6V9/tG0K0ZhcmFheiBNb2hhbW1lZCA8ZmFyYWF6Lm0uY2FyZWVyQGdtYWlsLmNv
+bT6ImQQTFgoAQRYhBH5pCpsaw66Pr6pL7YHbhpJsClblBQJoVgSTAhsDBQkFpGzt
+BQsJCAcCAiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEIHbhpJsClbldTwA+wbACusT
+IUNKP0vA+EfjB+4nRqCrAS19Hk9AmandeT/NAQDzdIr6qZiUo9zWjdggoE1qfZnj
+zypAk9KTsGeJVC07BLg4BGhWBJMSCisGAQQBl1UBBQEBB0BUpBxyCmfkrr39uzSW
+dc5njVX4OzKWj71/uDarDNK8eQMBCAeIfgQYFgoAJhYhBH5pCpsaw66Pr6pL7YHb
+hpJsClblBQJoVgSTAhsMBQkFpGztAAoJEIHbhpJsClblN5QA/R+tuyzkS4TU/JrS
+r0bdIYi2wMdXA5n7tr2Sn7b0ZNElAQCWPndCPxP2TtVzq4FYYPNraE2NKvFDWVsx
++MjJocU2Dw==
+=Olsj
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+      <a href=".well-known/pgp-key.txt" target="_blank">📥 Download my key</a>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xwkjnlpo" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send Secure Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Faraaz Mohammed. All rights reserved.
+  </footer>
 </body>
 </html>
