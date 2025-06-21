@@ -1,0 +1,5 @@
+# Security Policy
+Contact: mailto:security@yourdomain.com
+Encryption: https://yourdomain.com/pgp-key.txt
+Acknowledgments: https://yourdomain.com/hall-of-fame
+Policy: https://yourdomain.com/security-policy
